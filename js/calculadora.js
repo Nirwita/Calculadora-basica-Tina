@@ -23,7 +23,7 @@ function restar() {
   numero1 = Number(numero1);
   numero2 = Number(numero2);
 
-  // Hacemos la suma
+  // Hacemos la resta
   let resultado = numero1 - numero2;
 
   // Mostramos el resultado
@@ -39,7 +39,7 @@ function multiplicar() {
   numero1 = Number(numero1);
   numero2 = Number(numero2);
 
-  // Hacemos la suma
+  // Hacemos la multiplicación
   let resultado = numero1 * numero2;
 
   // Mostramos el resultado
@@ -55,7 +55,7 @@ function dividir() {
   numero1 = Number(numero1);
   numero2 = Number(numero2);
 
-  // Hacemos la suma
+  // Hacemos la división
   let resultado = numero1 / numero2;
 
   // Mostramos el resultado
