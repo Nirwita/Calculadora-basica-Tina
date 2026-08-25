@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <title>Calculadora de Tina</title>
+    <title>Calculadorina</title>
   </head>
 
   <body>
     <!-- Titulo-->
     <div class="calculadora">
       <div>
-        <h1>Calculadora de Tina</h1>
+        <h1>Calculadorina</h1>
       </div>
 
       <!-- Primer numero-->
@@ -32,13 +32,23 @@
       <br />
 
       <!-- Botón sumar-->
-      <button onclick="sumar()">Sumar</button>
+      <button onclick="sumar()">+</button>
+
+      <!-- Botón restar-->
+      <button onclick="restar()">-</button>
+
+      <!-- Botón multiplicar-->
+      <button onclick="multiplicar()">-</button>
+
+      <!-- Botón dividir-->
+      <button onclick="dividir()">-</button>
 
       <!-- Resultado impreso-->
       <h2>
         Resultado:
-        <div id="resultado">0</div>
+        <div id="resultado"></div>
       </h2>
     </div>
+    <script src="js/calculadora.js"></script>
   </body>
 </html>
