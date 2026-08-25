@@ -1,0 +1,160 @@
+body {
+  font-family: "Trebuchet MS", sans-serif;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #fff5f7;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.calculadora {
+  width: 380px;
+  padding: 30px;
+
+  background-image: url("./sakura.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 30px;
+
+  box-shadow: 0 10px 30px rgba(100, 40, 70, 0.3);
+
+  box-sizing: border-box;
+
+  position: relative;
+
+  /* Centrar todo el texto */
+  text-align: center;
+}
+
+/* Capa rosa transparente */
+.calculadora::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(246, 182, 200, 0.75);
+
+  z-index: 0;
+}
+
+/* Contenido por encima de la imagen */
+.calculadora > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Caja principal de la calculadora */
+body > div:first-child,
+body > div:nth-child(2),
+body > div:nth-child(3),
+button,
+h2 {
+  /* Estilos generales */
+}
+
+/* Título */
+h1 {
+  font-family: "Georgia", serif;
+  color: #8f3d5c;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Campos de los números */
+body > div:nth-of-type(2),
+body > div:nth-of-type(3) {
+  background-color: #f6b6c8;
+  width: 320px;
+  margin: 0 auto 15px auto;
+  padding: 15px;
+  border-radius: 20px;
+  color: #6d3047;
+  font-size: 17px;
+}
+
+/* Inputs */
+input {
+  width: 220px;
+  padding: 10px;
+  margin-top: 8px;
+
+  border: 2px solid #d97898;
+  border-radius: 12px;
+
+  background-color: #fffafa;
+  color: #6d3047;
+
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Botón */
+button {
+  background-color: #a94f70;
+  color: white;
+
+  border: none;
+  border-radius: 15px;
+
+  padding: 12px 30px;
+
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 0 #7d3853;
+
+  transition: 0.2s;
+}
+
+/* Cuando pasamos el ratón por encima */
+button:hover {
+  background-color: #913f5f;
+}
+
+/* Cuando pulsamos el botón */
+button:active {
+  box-shadow: 0 1px 0 #7d3853;
+  transform: translateY(3px);
+}
+
+/* Resultado */
+h2 {
+  color: #8f3d5c;
+  font-family: "Georgia", serif;
+  margin-top: 30px;
+}
+
+/* Número del resultado */
+#resultado {
+  background-color: #fffafa;
+
+  width: 220px;
+  margin: 10px auto;
+
+  padding: 15px;
+
+  border: 2px solid #d97898;
+  border-radius: 15px;
+
+  color: #8f3d5c;
+  font-size: 28px;
+  font-weight: bold;
+
+  box-shadow: 0 3px 8px rgba(150, 70, 100, 0.15);
+}
